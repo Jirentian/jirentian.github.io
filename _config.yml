@@ -1,30 +1,30 @@
 # Site settings
-title: Hux Blog
-SEOTitle: 吉人天博客 | Jirentian Blog
-header-img: img/home-bg.jpg
-email: balalahite@outlook.com
-description: "这里是 @jirentian 的个人博客，与你一起发现更大的世界"
-keyword: "jirentain的窝"
-url: "https://huangxuan.me" # your host, for absolute URL
-baseurl: "" # for example, '/blog' if your blog hosted on 'host/blog'
+title: Hux Blog                                 # [修改] 博客标题
+SEOTitle: 吉人天博客 | Jirentian Blog            # [修改] 浏览器标签页显示的标题
+header-img: img/home-bg.jpg                     # [修改] 首页背景图片
+email: balalahite@outlook.com                   # [修改] 您的邮箱地址
+description: "这里是 @jirentian 的个人博客，与你一起发现更大的世界"  # [修改] 网站描述，用于SEO
+keyword: "jirentain的窝"                        # [修改] 网站关键词，用于SEO
+url: "https://huangxuan.me"                     # [修改] 您的网站URL，用于绝对路径
+baseurl: ""                                     # [修改] 如果您的博客在子目录中，例如'host/blog'，则填写'/blog'
 
 # Publish posts or collection documents with a future date.
-future: true
+future: true                                    # [可选] 是否发布日期为未来的文章
 
 # SNS settings
-RSS: false
-weibo_username: huxpro
-zhihu_username: huxpro
-github_username: huxpro
-twitter_username: huxpro
-#facebook_username:  huxpro
-#linkedin_username:  firstname-lastname-idxxxx
+RSS: false                                      # [可选] 是否启用RSS
+weibo_username: huxpro                          # [修改] 微博用户名
+zhihu_username: huxpro                          # [修改] 知乎用户名
+github_username: huxpro                         # [修改] GitHub用户名
+twitter_username: huxpro                        # [修改] Twitter用户名
+#facebook_username:  huxpro                     # [修改] 取消注释并填写Facebook用户名
+#linkedin_username:  firstname-lastname-idxxxx  # [修改] 取消注释并填写LinkedIn用户名
 
 # Build settings
 # from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
-highlighter: rouge
-permalink: pretty
-paginate: 10
+highlighter: rouge                              # [保持] 代码高亮器
+permalink: pretty                               # [保持] URL永久链接格式
+paginate: 10                                    # [可选] 每页显示文章数
 exclude:
   [
     "less",
@@ -33,63 +33,63 @@ exclude:
     "package.json",
     "README.md",
     "README.zh.md",
-  ]
-anchorjs: true # if you want to customize anchor. check out line:181 of `post.html`
+  ]                                             # [保持] 构建时排除的文件
+anchorjs: true                                  # [可选] 是否启用锚点
 # If you have timezone issue (e.g. #68) in China, uncomment to use this:
-#timezone: CN
+#timezone: CN                                   # [可选] 如果在中国有时区问题，取消此行注释
 
 # Gems
 # from PR#40, to support local preview for Jekyll 3.0
 # make sure you have this gem installed
 # `$ gem install jekyll-paginate`
-plugins: [jekyll-paginate]
+plugins: [jekyll-paginate]                      # [保持] Jekyll插件
 
 # Markdown settings
 # replace redcarpet to kramdown,
 # although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
 # document: http://jekyllrb.com/docs/configuration/#kramdown
-markdown: kramdown
+markdown: kramdown                              # [保持] Markdown解析器
 kramdown:
-  input: GFM # use Github Flavored Markdown !important
+  input: GFM                                    # [保持] 使用GitHub风格Markdown
   syntax_highlighter_opts:
     span:
       line_numbers: false
     block:
       line_numbers: true
-      start_line: 1
+      start_line: 1                             # [保持] 语法高亮设置
 
 # Disqus settings
-disqus_username: hux
+disqus_username: hux                            # [修改] Disqus评论用户名，如不使用可留空
 
 # Netease settings
-netease_comment: false
+netease_comment: false                          # [可选] 是否启用网易云跟帖
 
 # Analytics settings
 # Baidu Analytics
-# ba_track_id: [your track id]
+# ba_track_id: [your track id]                  # [修改] 百度统计跟踪ID，如不使用可注释掉
 
 # Google Analytics
-ga_track_id: "UA-49627206-1" # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_track_id: "UA-49627206-1"                    # [修改] Google Analytics跟踪ID
+ga_domain: huangxuan.me                         # [修改] 网站域名
 
 # Sidebar settings
-sidebar: true # whether or not using Sidebar.
-sidebar-about-description: "要做一个有 swag 的程序员 <br> React Team @ Meta"
-sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar: true                                   # [可选] 是否使用侧边栏
+sidebar-about-description: "要做一个有 swag 的程序员 <br> React Team @ Meta"  # [修改] 侧边栏关于我描述
+sidebar-avatar: https://github.com/Huxpro.png   # [修改] 侧边栏头像URL
 
 # Featured Tags
-featured-tags: true # whether or not using Feature-Tags
-featured-condition-size: 1 # A tag will be featured if the size of it is more than this condition value
+featured-tags: true                             # [可选] 是否使用特色标签
+featured-condition-size: 1                      # [可选] 当标签文章数超过此值时显示为特色标签
 
 # Progressive Web Apps
-chrome-tab-theme-color: "#000000"
-service-worker: true
+chrome-tab-theme-color: "#000000"               # [可选] Chrome标签页主题颜色
+service-worker: true                            # [可选] 是否启用Service Worker
 
 # MathJax rendering for layout:page (e.g. post preview)
-page-mathjax: false
+page-mathjax: false                             # [可选] 是否在页面中启用MathJax
 
 # Friends
-friends:
+friends:                                        # [修改] 友情链接列表
   [
     { title: "乱序（Midare）", href: "http://mida.re/" },
     { title: "Ebn Zhang", href: "https://ebnbin.dev/" },
@@ -99,4 +99,4 @@ friends:
     { title: "JiyinYiyong", href: "http://tiye.me/" },
     { title: "DHong Say", href: "http://dhong.co" },
     { title: "尹峰以为", href: "http://ingf.github.io/" },
-  ]
+  ]                                             # 添加或删除友情链接，格式为 { title: "名称", href: "链接" }
